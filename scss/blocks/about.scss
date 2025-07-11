@@ -1,0 +1,11 @@
+.about {
+
+    .about__desc {
+        font-family: $font-family;
+        @include font-mixin($line-height-param: 24px, $font-weight-param: 300);
+    }
+
+    .digits__desk-orange {
+        color: $gold;
+    }
+}

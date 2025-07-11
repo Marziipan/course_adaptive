@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "gulp css",
-    "start": "gulp server"
+    "start": "gulp start"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "devDependencies": {
     "browser-sync": "^3.0.4",
     "gulp": "^5.0.1",
-    "gulp-sass": "^6.0.1",
-    "sass": "^1.89.2"
+    "gulp-sass": "6.0.1",
+    "sass": "1.50.0"
   }
 }

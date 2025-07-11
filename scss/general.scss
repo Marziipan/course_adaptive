@@ -1,0 +1,26 @@
+body {
+    font-family: $font-family-condensed;
+    @include font-mixin();
+    background: $dark-gray;
+    color: $white;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    @include font-mixin(48px, 65px, 300);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.section-title-orange {
+    color: $gold;
+}
+
+.section-subtitle {
+    @include font-mixin(21px, 28px);
+        text-transform: uppercase;
+}
