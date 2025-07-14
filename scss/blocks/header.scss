@@ -1,4 +1,7 @@
 .header {
+    background: url('/img/header-bkg.jpg');
+    border-color: $gray-bkg;
+
     .header__nav-link {
         text-transform: uppercase;
         @include font-mixin(17px, 25px);
@@ -17,5 +20,19 @@
     .header__desc {
         font-family: $font-family;
         @include font-mixin(14px, 21px 400);
+    }
+
+    .header__slider-btn{
+        @include font-mixin(18px,24px);
+        text-transform: uppercase;
+        color: inherit;
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+
+    .header__link-poster{
+        width: 160px;
+        min-height: 50px;
     }
 }

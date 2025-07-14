@@ -1,6 +1,8 @@
 .btn {
-    @include font-mixin(18px, 25px);
+    @include font-mixin(18px, 24px);
+    @include flex-center();
+    font-family: $font-family-condensed;
+    text-transform: uppercase;
     background-color: $gold;
     color: $white;
-    text-transform: uppercase;
 }
