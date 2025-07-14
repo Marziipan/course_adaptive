@@ -20,6 +20,7 @@ gulp.task('reload', function(done) {
     done();
 });
 
+
 gulp.watch("scss/**/*.{scss,sass}", gulp.series('css', 'reload'));
 
 gulp.task('start', gulp.series('css','server'));
