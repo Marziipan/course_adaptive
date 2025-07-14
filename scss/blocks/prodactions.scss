@@ -1,0 +1,26 @@
+.productions {
+    
+    .productions__item-title {
+        @include font-mixin(24px, 32px);
+        font-family: $font-family-condensed;
+        text-transform: uppercase;
+    }
+
+    .productions__item-title {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &--building {
+            background-image: url('/img/productions1.jpg');
+        }
+
+        &--square {
+            background-image: url(/img/productions2.jpg);
+        }
+
+        &--hall {
+            background-image: url(/img/productions3.jpg);
+        }
+    }
+}

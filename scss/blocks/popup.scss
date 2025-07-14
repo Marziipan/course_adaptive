@@ -1,0 +1,21 @@
+.popup {
+    input::placeholder,
+    textarea::placeholder {
+        color: $gray;
+    }
+
+    input, textarea {
+        background: $muted-gray;
+        border: 1px solid $granite-gray;
+        padding: 10px;
+    }
+
+    .popup__hint {
+        color: $gray;
+    }
+
+    .popup__close-btn{
+        background: transparent;
+        border: none;
+    }
+}
