@@ -24,3 +24,8 @@ a{
     @include font-mixin(21px, 28px);
         text-transform: uppercase;
 }
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
