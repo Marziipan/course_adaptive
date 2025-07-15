@@ -1,11 +1,47 @@
 .about {
+    padding: 150px 0 0;
+
+    .about__title {
+        margin: 0 0 100px;
+    }
+
+    .about__wrp {
+        @include flex-space-between();
+    }
+
+    .about__item-content {
+        width: 449px;
+        margin: 0 27px;
+    }
+
+    .about__subtitle {
+        @include font-mixin(21px, 28px);
+        text-transform: uppercase;
+        margin: 0 0 18px;
+        
+        &--digits {
+            margin: 0 0 60px;
+        }
+    }
+
 
     .about__desc {
-        font-family: $font-family;
         @include font-mixin($line-height-param: 24px, $font-weight-param: 300);
+        font-family: $font-family;
+        width: 431px;
+        height: 288px;
+    }
+
+    .about__item-digits {
+        width: 258px;
     }
 
     .digits__desk-orange {
         color: $gold;
+    }
+
+    .about__img {
+        width: 369px;
+        height: 323px;
     }
 }
