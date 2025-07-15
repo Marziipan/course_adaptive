@@ -1,0 +1,37 @@
+.rating {
+    background-image: url(/img/critics-awadrs-bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1110px;
+    height: 550px;
+    margin-top: 209px;
+
+    .rating__wrp {
+        @include flex-space-between();
+        padding: 126px 190px 0 190px;
+    }
+
+    .rating__year-item {
+        font-family: $font-family-condensed;
+        @include font-mixin(72px, 98px);
+        text-transform: uppercase;
+        color: $gold;
+        margin: 0 0 20px;;
+    }
+
+    .rating__info {
+        width: 445px;
+        height: 232px;
+        margin: 35px 0 0;
+    }
+    .rating__stars {
+        display: flex;
+        margin: 0 0 31px;
+        gap: 48px;
+    }
+
+    .rating__title {
+        @include font-mixin(38px, 65px);
+        letter-spacing: 2px;
+    }
+}
