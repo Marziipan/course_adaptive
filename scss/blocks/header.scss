@@ -12,6 +12,10 @@
         margin: 0 0 219px;
     }
 
+    .header__nav-item:nth-of-type(n+2) {
+        margin-left: 63px;
+    }
+
     .header__nav-link {
         text-transform: uppercase;
         @include font-mixin(17px, 25px);
