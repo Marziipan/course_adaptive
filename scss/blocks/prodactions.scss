@@ -1,15 +1,28 @@
 .productions {
+    padding: 119px 0 0;
+
+    .productions__title{ 
+        margin: 0 0 113px;
+    }
+
+    .productions__list {
+        @include flex-center();
+    }
     
     .productions__item-title {
         @include font-mixin(24px, 32px);
         font-family: $font-family-condensed;
         text-transform: uppercase;
+        margin: 35px 0 0 34px;
+        width: 100px;
     }
 
-    .productions__item-title {
+    .productions__item {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        width: 370px;
+        height: 478px;
 
         &--building {
             background-image: url('/img/productions1.jpg');

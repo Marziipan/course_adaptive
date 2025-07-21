@@ -1,7 +1,8 @@
 .popup {
+    display: none;
     input::placeholder,
     textarea::placeholder {
-        color: $gray;
+    color: $gray;
     }
 
     input, textarea {
