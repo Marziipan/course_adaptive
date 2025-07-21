@@ -1,7 +1,17 @@
 .partners {
 
+    .partners__title {
+        margin: 0 0 60px;
+    }
+
+    .partners__list {
+        @include flex-space-between();
+        margin: 0 0 113px;
+    }
+
     .partners__btn {
         width: 359px;
         min-height: 72px;
+        margin: 0 auto;
     }
 }
