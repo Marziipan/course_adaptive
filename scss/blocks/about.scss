@@ -1,6 +1,10 @@
 .about {
     padding: 150px 0 0;
 
+    @include desktop-wide {
+        padding: 144px 0 0;
+    }
+
     .about__title {
         margin: 0 0 100px;
     }
@@ -12,6 +16,11 @@
     .about__item-content {
         width: 449px;
         margin: 0 27px;
+
+        @include desktop-wide{
+          width: 431px;
+          margin: 0 24px;  
+        }
     }
 
     .about__subtitle {
@@ -22,18 +31,33 @@
         &--digits {
             margin: 0 0 60px;
         }
+
+        @include desktop-wide {
+            margin: 0 0 55px;
+        }
     }
 
+    .digits__item {
+        
+    }
 
     .about__desc {
-        @include font-mixin($line-height-param: 24px, $font-weight-param: 300);
+        @include font-mixin($line-height-param: 24px, $font-weight-param: 400);
         font-family: $font-family;
         width: 431px;
         height: 288px;
+
+        @include tablet {
+            @include font-mixin(14px, 21px, 400)
+        }
     }
 
     .about__item-digits {
         width: 258px;
+
+        @include desktop-wide{
+            width: 208px;
+        }
     }
 
     .digits__desk-orange {
@@ -43,5 +67,9 @@
     .about__img {
         width: 369px;
         height: 323px;
+
+        @include desktop-wide {
+            display: none;
+        }
     }
 }
