@@ -1,15 +1,21 @@
 .rating {
-    background-image: url(/img/critics-awadrs-bkg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 209px 25px 0;
     width: 1110px;
-    height: 550px;
-    margin-top: 209px;
-    margin-bottom: 150px;
+    margin: 0 auto;
+
+    @include desktop-wide {
+        padding: 125px 0 0;
+        width: 100%;
+    }
 
     .rating__wrp {
+        background-image: url(/img/critics-awards-bkg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 126px 165px 142px;
+
         @include flex-space-between();
-        padding: 126px 190px 0 190px;
     }
 
     .rating__year-item {
@@ -21,18 +27,32 @@
     }
 
     .rating__info {
-        width: 445px;
-        height: 232px;
+        width: 540px;
         margin: 35px 0 0;
+
+        @include desktop-wide {
+            width: 457px;
+        }
     }
+
     .rating__stars {
         display: flex;
         margin: 0 0 31px;
         gap: 48px;
+
+        @include desktop-wide {
+            margin: 0 0 20px;
+            width: 35px;
+            height: 39px;
+        }
     }
 
     .rating__title {
-        @include font-mixin(38px, 65px);
+        @include font-mixin(36px, 54px);
         letter-spacing: 2px;
+
+        @include desktop-wide {
+            @include font-mixin(34px, 51px)
+        }
     }
 }
