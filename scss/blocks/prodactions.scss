@@ -1,8 +1,16 @@
 .productions {
     padding: 119px 0 0;
 
+    @include desktop-wide {
+        padding: 78px 0 0;
+    }
+
     .productions__title{ 
         margin: 0 0 113px;
+
+        @include desktop-wide {
+            margin: 0 0 94px;
+        }
     }
 
     .productions__list {
@@ -23,6 +31,7 @@
         background-size: cover;
         width: 370px;
         height: 478px;
+        box-sizing: border-box;
 
         &--building {
             background-image: url('/img/productions1.jpg');
@@ -34,6 +43,15 @@
 
         &--hall {
             background-image: url(/img/productions3.jpg);
+
+            @include desktop-wide {
+                display: none;
+            }
+        }
+
+        @include desktop-wide {
+            width: 50%;
+            min-height: 476px;
         }
     }
 }
