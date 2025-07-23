@@ -3,26 +3,50 @@
     border-color: $gray-bkg;
     padding: 50px 0 179px;
 
-    .header__nav-list {
-        display: flex;
+    @include desktop-wide {
+        padding: 48px 0 363px;
     }
 
-    .div__nav-wrp {
+    .header__nav-list {
+        display: flex;
+
+        @include desktop-wide {
+            justify-content: space-between;
+            margin: 0 0 29px;
+        }
+    }
+
+    .header__nav-wrp {
         @include flex-space-between();
         margin: 0 0 219px;
+
+        @include desktop-wide {
+            flex-direction: column;
+            margin: 0 0 260px;
+        }
     }
 
     .header__nav-item:nth-of-type(n+2) {
         margin-left: 63px;
+
+        @include desktop-wide {
+            margin: 0;
+        }
     }
 
     .header__nav-link {
         text-transform: uppercase;
-        @include font-mixin(17px, 25px);
+        @include font-mixin(18px, 25px);
+
+         @include desktop-wide {
+            @include font-mixin(16px, 22px)
+        }
     }
 
     .header__tel {
         @include font-mixin($line-height-param: 22px);
+        border-bottom: 1px solid $gold;
+        width: 110px;
     }
 
     .header__content-wrp {
@@ -33,6 +57,10 @@
         width: 540px;
         height: 296px;
         padding: 88px 0 0;
+
+        @include desktop-wide {
+            padding: 0;
+        }
     }
 
     .header__title {
@@ -48,13 +76,29 @@
         margin: 0 0 50px;
     }
 
+    .header__link-poster{
+        width: 160px;
+        min-height: 50px;
+
+        @include desktop-wide {
+            width: 175px;
+        }
+    }
+
     .header__img {
         width: 370px;
         height: 509px;
         margin: 0 0 36px;
     }
+
     .header__btn-wrp {
         @include flex-space-between();
+    }
+
+    .header__slider {
+        @include desktop-wide {
+            display: none;
+        }
     }
 
     .header__slider-btn{
@@ -64,10 +108,5 @@
         padding: 0;
         border: none;
         background: transparent;
-    }
-
-    .header__link-poster{
-        width: 160px;
-        min-height: 50px;
     }
 }

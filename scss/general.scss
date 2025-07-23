@@ -24,4 +24,8 @@ a{
 .container {
     width: 1110px;
     margin: 0 auto;
+
+    @include desktop-wide {
+        width: 655px;
+    }
 }
