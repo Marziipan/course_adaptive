@@ -1,12 +1,32 @@
 .partners {
+    padding:150px 0 0;
+
+    @include desktop-wide {
+        padding: 187px 0 0;
+    }
 
     .partners__title {
         margin: 0 0 60px;
     }
 
     .partners__list {
-        @include flex-space-between();
+        display: flex;
         margin: 0 0 113px;
+
+        @include desktop-wide {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .partners__item:nth-of-type(n+2) {
+        margin-left: 78px;
+    }
+
+    .partners__item:nth-of-type(3n) {
+        @include desktop-wide {
+            margin-left: 0;
+        }
     }
 
     .partners__btn {
