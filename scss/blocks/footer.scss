@@ -1,22 +1,53 @@
 .footer {
     padding: 112px 0 0;
 
+    @include desktop-wide {
+        padding: 62px 0 0;
+    }
+
     .footer__title {
         margin: 0 0 50px;
     }
 
-    .footer__contacts-list{
+    .footer__contacts-wrp {
         @include flex-space-between();
         margin: 0 0 100px;
     }
 
+    .footer__contacts-list {
+        @include flex-space-between;
+
+        
+        @include desktop-wide {
+            flex-direction: column;
+        }
+    }
+
+    .footer__contacts-list--tel {
+        width: 42%;
+        margin-right: 6%;
+    }
+
+    .footer__contacts-list--address {
+        width: 51%;
+
+        @include desktop-wide {
+            align-items: flex-end;
+        }
+    }
 
     .footer__contacts-item-desc {
         @include font-mixin(21px, 28px);
         font-family: $font-family-condensed;
         text-transform: uppercase;
-        letter-spacing: 10%;
+        letter-spacing: 2px;
         font-style: normal;
+
+        @include desktop-wide {
+            @include font-mixin(16px, 19px);
+            display: block;
+            margin: 0 0 25px;
+        }
     }
 
     .footer__author-desc {

@@ -127,20 +127,24 @@
     </main>
     <footer class="footer container">
         <h2 class="footer__title section-title section-title-orange">Контакты</h2>
-        <ul class="footer__contacts-list">
-            <li>
-                <a class="footer__contacts-item-desc" href="tel:+78121234555">+7 (812) 123-45-55</a>
-            </li>
-            <li>
-                <a class="footer__contacts-item-desc" href="tel:+78121234566">+7 (812) 123-45-66</a>
-            </li>
-            <li>
-                <a class="footer__contacts-item-desc" href="mailto:info@theater.ru">info@theater.ru</a>
-            </li>
-            <li>
-                <address class="footer__contacts-item-desc">г. Cанкт-Петербург, Невский 140</address>
-            </li>
-        </ul>
+        <div class="footer__contacts-wrp">
+            <ul class="footer__contacts-list footer__contacts-list--tel">
+                <li>
+                    <a class="footer__contacts-item-desc" href="tel:+78121234555">+7 (812) 123-45-55</a>
+                </li>
+                <li>
+                    <a class="footer__contacts-item-desc" href="tel:+78121234566">+7 (812) 123-45-66</a>
+                </li>
+            </ul>
+            <ul class="footer__contacts-list footer__contacts-list--address">
+                <li>
+                    <a class="footer__contacts-item-desc" href="mailto:info@theater.ru">info@theater.ru</a>
+                </li>
+                <li>
+                    <address class="footer__contacts-item-desc">г. Cанкт-Петербург, Невский 140</address>
+                </li>
+            </ul>
+        </div>
         <div class="footer__author-desc">
             <p class="footer__author-desc-copyright">(с) Все права защищены. Большой театр. 2020</p>
             <a class="footer__author-desc-link" href="https://d-e-n.ru">Разработано d-e-n.ru</a>
