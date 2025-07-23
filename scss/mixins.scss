@@ -15,3 +15,21 @@
   line-height: $line-height-param;
   font-weight: $font-weight-param;
 }
+
+@mixin desktop-wide {
+  @media (max-width: $desktop-wide) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}

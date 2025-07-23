@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="div__nav-wrp">
+            <div class="header__nav-wrp">
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a></li>
@@ -33,7 +33,7 @@
                         театральных зданий в Европе XVIII.</p>
                     <a class="header__link-poster btn" href="#">афиша</a>
                 </div>
-                <div>
+                <div class="header__slider">
                     <img class="header__img" src="img/slider-container.png" alt="Большой театр">
                     <div class="header__btn-wrp">
                         <button class="header__slider-btn" type="button">пред</button>
@@ -61,9 +61,11 @@
                     <h3 class="about__subtitle about__subtitle--digits">немного о цифрах</h3>
                     <ul class="about__digits digits">
                         <li class="digits__item">
+                            <img src="/img/armchair.png" alt="кресло">
                             <p class="digits__desc"><span class="digits__desk-orange">1600</span> посадочный мест</p>
                         </li>
                         <li class="digits__item">
+                            <img src="/img/theater.png" alt="Театр">
                             <p class="digits__desc"><span class="digits__desk-orange">350</span> лет истории</p>
                         </li>
                     </ul>
@@ -85,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <section class="rating container">
+        <section class="rating">
             <div class="rating__wrp">
                 <ul class="rating__year-list">
                     <li class="rating__year-item">2018</li>
@@ -125,20 +127,24 @@
     </main>
     <footer class="footer container">
         <h2 class="footer__title section-title section-title-orange">Контакты</h2>
-        <ul class="footer__contacts-list">
-            <li>
-                <a class="footer__contacts-item-desc" href="tel:+78121234555">+7 (812) 123-45-55</a>
-            </li>
-            <li>
-                <a class="footer__contacts-item-desc" href="tel:+78121234566">+7 (812) 123-45-66</a>
-            </li>
-            <li>
-                <a class="footer__contacts-item-desc" href="mailto:info@theater.ru">info@theater.ru</a>
-            </li>
-            <li>
-                <address class="footer__contacts-item-desc">г. Cанкт-Петербург, Невский 140</address>
-            </li>
-        </ul>
+        <div class="footer__contacts-wrp">
+            <ul class="footer__contacts-list footer__contacts-list--tel">
+                <li>
+                    <a class="footer__contacts-item-desc" href="tel:+78121234555">+7 (812) 123-45-55</a>
+                </li>
+                <li>
+                    <a class="footer__contacts-item-desc" href="tel:+78121234566">+7 (812) 123-45-66</a>
+                </li>
+            </ul>
+            <ul class="footer__contacts-list footer__contacts-list--address">
+                <li>
+                    <a class="footer__contacts-item-desc" href="mailto:info@theater.ru">info@theater.ru</a>
+                </li>
+                <li>
+                    <address class="footer__contacts-item-desc">г. Cанкт-Петербург, Невский 140</address>
+                </li>
+            </ul>
+        </div>
         <div class="footer__author-desc">
             <p class="footer__author-desc-copyright">(с) Все права защищены. Большой театр. 2020</p>
             <a class="footer__author-desc-link" href="https://d-e-n.ru">Разработано d-e-n.ru</a>
