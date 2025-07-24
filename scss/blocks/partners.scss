@@ -5,9 +5,30 @@
         padding: 187px 0 0;
     }
 
+    @include tablet {
+        padding: 33px 0 0;
+    }
+
+
+
+
+
     .partners__title {
         margin: 0 0 60px;
+
+        @include desktop-wide {
+            margin: 0 0 36px;
+        }
+
+        @include tablet {
+            margin: 0 0 56px;
+        }
     }
+
+
+
+
+
 
     .partners__list {
         display: flex;
@@ -16,12 +37,20 @@
         @include desktop-wide {
             flex-wrap: wrap;
             justify-content: center;
+            margin: 0 0 63px;
         }
     }
+
+
+
 
     .partners__item:nth-of-type(n+2) {
         margin-left: 78px;
     }
+
+
+
+
 
     .partners__item:nth-of-type(3n) {
         @include desktop-wide {
@@ -29,9 +58,24 @@
         }
     }
 
+
+    .partners__item:nth-of-type(-n+2) {
+        @include desktop-wide {
+            margin-bottom: 80px;
+        }
+    }
+
+
+
+
     .partners__btn {
         width: 359px;
         min-height: 72px;
         margin: 0 auto;
+
+        @include tablet {
+            width: 326px;
+            min-height: 45px;
+        }
     }
 }
