@@ -16,6 +16,16 @@
         padding: 126px 165px 142px;
 
         @include flex-space-between();
+
+        @include desktop-wide {
+            padding: 134px 134px 118px 168px;
+            gap: 51px;
+        }
+
+        @include tablet {
+            padding: 126px 99px 126px 99px;
+            gap: 25px;
+        }
     }
 
     .rating__year-item {
@@ -44,6 +54,14 @@
             margin: 0 0 20px;
             width: 35px;
             height: 39px;
+            gap: 33px;
+        }
+
+        @include tablet {
+            margin: 0 0 49px;
+            width: 30px;
+            height: 38px;
+            gap: 29px;
         }
     }
 
@@ -53,6 +71,10 @@
 
         @include desktop-wide {
             @include font-mixin(34px, 51px)
+        }
+
+        @include tablet {
+            @include font-mixin(29px, 44px)
         }
     }
 }
