@@ -10,6 +10,9 @@
         min-width: 690px;
     }
 
+
+
+
     .about__title {
         margin: 0 0 100px;
 
@@ -18,9 +21,15 @@
         }
     }
 
+
+
+
     .about__wrp {
         @include flex-space-between();
     }
+
+
+
 
     .about__item-content {
         width: 449px;
@@ -36,6 +45,9 @@
             margin: 0 30px;
         }
     }
+
+
+
 
     .about__subtitle {
         @include font-mixin(21px, 28px);
@@ -64,6 +76,9 @@
         }
     }
 
+
+
+
     .about__desc {
         @include font-mixin($line-height-param: 24px, $font-weight-param: 400);
         font-family: $font-family;
@@ -75,10 +90,13 @@
         }
 
         @include tablet {
-            @include font-mixin(14px, 21px, 400);
+            @include font-mixin(14px, 21px,  );
             width: 445px;
         }
     }
+
+
+
 
     .about__item-digits {
         width: 258px;
@@ -88,9 +106,15 @@
         }
     }
 
+
+
+
     .digits__desk-orange {
         color: $gold;
     }
+
+
+
 
     .about__digits {
         display: flex;
@@ -106,9 +130,15 @@
         }
     }
 
+
+
+
     .digits__item img {
         margin: 0 0 10px;
     }
+
+
+
 
     .about__img {
         width: 369px;
