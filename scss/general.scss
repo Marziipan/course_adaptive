@@ -29,7 +29,12 @@ a{
         max-width: 655px;
     }
 
-    include tablet {
+    @include tablet {
         width: 690px;
     }
+
+    @include mobile {
+        width: 510px;
+    }
+
 }
