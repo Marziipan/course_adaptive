@@ -22,10 +22,14 @@ a{
 }
 
 .container {
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
 
     @include desktop-wide {
-        width: 655px;
+        max-width: 655px;
+    }
+
+    include tablet {
+        width: 690px;
     }
 }

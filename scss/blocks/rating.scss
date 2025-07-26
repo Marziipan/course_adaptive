@@ -8,6 +8,13 @@
         width: 100%;
     }
 
+    @include tablet {
+        padding: 160px 0 0;
+    }
+
+
+
+
     .rating__wrp {
         background-image: url(/img/critics-awards-bkg.jpg);
         background-repeat: no-repeat;
@@ -16,7 +23,20 @@
         padding: 126px 165px 142px;
 
         @include flex-space-between();
+
+        @include desktop-wide {
+            padding: 134px 134px 118px 168px;
+            gap: 51px;
+        }
+
+        @include tablet {
+            padding: 126px 99px 126px 99px;
+            gap: 25px;
+        }
     }
+
+
+
 
     .rating__year-item {
         font-family: $font-family-condensed;
@@ -26,6 +46,9 @@
         margin: 0 0 20px;;
     }
 
+
+
+
     .rating__info {
         width: 540px;
         margin: 35px 0 0;
@@ -33,7 +56,14 @@
         @include desktop-wide {
             width: 457px;
         }
+
+        @include tablet {
+            width: 388px; 
+        }
     }
+
+
+
 
     .rating__stars {
         display: flex;
@@ -44,8 +74,19 @@
             margin: 0 0 20px;
             width: 35px;
             height: 39px;
+            gap: 33px;
+        }
+
+        @include tablet {
+            margin: 0 0 49px;
+            width: 30px;
+            height: 38px;
+            gap: 29px;
         }
     }
+
+
+
 
     .rating__title {
         @include font-mixin(36px, 54px);
@@ -53,6 +94,10 @@
 
         @include desktop-wide {
             @include font-mixin(34px, 51px)
+        }
+
+        @include tablet {
+            @include font-mixin(29px, 44px)
         }
     }
 }

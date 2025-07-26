@@ -5,52 +5,98 @@
         padding: 144px 0 0;
     }
 
+    @include tablet {
+        padding: 90px 0 0;
+        min-width: 690px;
+    }
+
+
+
+
     .about__title {
         margin: 0 0 100px;
+
+        @include tablet {
+            margin: 0 0 60px;
+        }
     }
+
+
+
 
     .about__wrp {
         @include flex-space-between();
     }
 
+
+
+
     .about__item-content {
         width: 449px;
         margin: 0 27px;
 
-        @include desktop-wide{
+        @include desktop-wide {
           width: 431px;
           margin: 0 24px;  
         }
+
+        @include tablet {
+            width: 445px;
+            margin: 0 30px;
+        }
     }
+
+
+
 
     .about__subtitle {
         @include font-mixin(21px, 28px);
         text-transform: uppercase;
         margin: 0 0 18px;
+        white-space: nowrap;
         
         &--digits {
             margin: 0 0 60px;
+
+            @include desktop-wide {
+                margin: 0 0 74px;
+            }
+
+            @include tablet {
+                margin: 0 0 40px;
+            }
         }
 
         @include desktop-wide {
             margin: 0 0 55px;
         }
+
+        @include tablet {
+            margin: 0 0 40px;
+        }
     }
 
-    .digits__item {
-        
-    }
+
+
 
     .about__desc {
         @include font-mixin($line-height-param: 24px, $font-weight-param: 400);
         font-family: $font-family;
-        width: 431px;
+        width: 445px;
         height: 288px;
 
+        @include desktop-wide {
+            width: 431px;
+        }
+
         @include tablet {
-            @include font-mixin(14px, 21px, 400)
+            @include font-mixin(14px, 21px,  );
+            width: 445px;
         }
     }
+
+
+
 
     .about__item-digits {
         width: 258px;
@@ -60,9 +106,39 @@
         }
     }
 
+
+
+
     .digits__desk-orange {
         color: $gold;
     }
+
+
+
+
+    .about__digits {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
+        @include desktop-wide {
+            gap: 50px;
+        }
+
+        @include tablet {
+            gap: 25px;
+        }
+    }
+
+
+
+
+    .digits__item img {
+        margin: 0 0 10px;
+    }
+
+
+
 
     .about__img {
         width: 369px;
