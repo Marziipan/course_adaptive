@@ -7,6 +7,14 @@
         padding: 48px 0 363px;
     }
 
+    @include tablet {
+        padding: 50px 0 252px;
+        position: relative;
+    }
+
+
+
+
     .header__nav-list {
         display: flex;
 
@@ -14,7 +22,15 @@
             justify-content: space-between;
             margin: 0 0 29px;
         }
+
+        @include tablet {
+            display: block;
+            margin: 0 0 40px;
+        }
     }
+
+
+
 
     .header__nav-wrp {
         @include flex-space-between();
@@ -24,7 +40,55 @@
             flex-direction: column;
             margin: 0 0 260px;
         }
+
+        @include tablet {
+            display: none;
+
+            &--open {
+                display: block;
+                position: absolute;
+                background: $dark-gray;
+                top: 0;
+                left: 0;
+                width: 300px;
+                height: 100%;
+                padding: 30px 47px 30px 47px;
+            }
+        }
     }
+
+
+
+
+    .header__buger {
+        display: none;
+
+        @include tablet {
+            display: block;
+            padding: 0;
+            background: transparent;
+            border: none;
+            margin: 0 0 190px;
+        }
+    }
+
+
+
+
+    .header__close-menu-btn {
+        display: none;
+
+        @include tablet {
+            display: block;
+            background: transparent;
+            border: none;
+            padding: 0;
+            margin: 30px 30px 0 238px;
+        }
+    }
+
+
+
 
     .header__nav-item:nth-of-type(n+2) {
         margin-left: 63px;
@@ -32,16 +96,30 @@
         @include desktop-wide {
             margin: 0;
         }
+
+        @include tablet {
+            margin: 35px 0 0;
+        }
     }
+
+
+
 
     .header__nav-link {
         text-transform: uppercase;
         @include font-mixin(18px, 25px);
 
          @include desktop-wide {
-            @include font-mixin(16px, 22px)
+            @include font-mixin(16px, 22px);
+        }
+
+        @include tablet {
+            @include font-mixin(24px, 33px);
         }
     }
+
+
+
 
     .header__tel {
         @include font-mixin($line-height-param: 22px);
@@ -49,9 +127,15 @@
         width: 110px;
     }
 
+
+
+
     .header__content-wrp {
         @include flex-space-between();
     }
+
+
+
 
     .header__intro {
         width: 540px;
@@ -61,7 +145,14 @@
         @include desktop-wide {
             padding: 0;
         }
+
+        @include tablet {
+            width: 100%;
+        }
     }
+
+
+
 
     .header__title {
         @include font-mixin(64px, 87px);
@@ -70,11 +161,17 @@
         margin: 0 0 50px;
     }
 
+
+
+
     .header__desc {
         font-family: $font-family;
         @include font-mixin(14px, 21px 400);
         margin: 0 0 50px;
     }
+
+
+
 
     .header__link-poster{
         width: 160px;
@@ -85,21 +182,33 @@
         }
     }
 
+
+
+
     .header__img {
         width: 370px;
         height: 509px;
         margin: 0 0 36px;
     }
 
+
+
+
     .header__btn-wrp {
         @include flex-space-between();
     }
+
+
+
 
     .header__slider {
         @include desktop-wide {
             display: none;
         }
     }
+
+
+
 
     .header__slider-btn{
         @include font-mixin(18px,24px);
