@@ -12,6 +12,10 @@
         padding: 160px 0 0;
     }
 
+    @include mobile {
+        padding: 36px 0 0;
+        width: 100%;
+    }
 
 
 
@@ -33,6 +37,10 @@
             padding: 126px 99px 126px 99px;
             gap: 25px;
         }
+
+        @include mobile {
+            padding: 48px 59px 59px 76px;
+        }
     }
 
 
@@ -43,7 +51,11 @@
         @include font-mixin(72px, 98px);
         text-transform: uppercase;
         color: $gold;
-        margin: 0 0 20px;;
+        margin: 0 0 20px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
 
@@ -83,6 +95,10 @@
             height: 38px;
             gap: 29px;
         }
+
+        @include mobile {
+            display: none;
+        }
     }
 
 
@@ -98,6 +114,13 @@
 
         @include tablet {
             @include font-mixin(29px, 44px)
+        }
+
+        @include mobile {
+            @include font-mixin(40px);
+            text-align: center;
+            line-height: 150%;
+            text-transform: uppercase;
         }
     }
 }
