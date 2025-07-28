@@ -9,6 +9,10 @@
         padding: 30px 0 0;
     }
 
+    @include mobile {
+        padding: 64px 0 0;
+    }
+
 
 
 
@@ -21,6 +25,10 @@
 
         @include tablet {
             margin: 0 0 35px;
+        }
+
+        @include mobile {
+            margin: 0 0 39px;
         }
     }
 
@@ -38,6 +46,10 @@
 
         @include tablet {
             margin: 0 0 62px;
+        }
+
+        @include mobile {
+            margin: 0 0 64px;
         }
     }
 
@@ -90,6 +102,10 @@
             @include font-mixin(16px, 19px);
             display: block;
             margin: 0 0 25px;
+        }
+
+        @include mobile {
+            white-space: nowrap;
         }
     }
 

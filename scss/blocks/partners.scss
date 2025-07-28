@@ -90,11 +90,16 @@
     }
 
     .partners__item:not(:last-of-type) {
-        margin: 0 0 26px;
+        @include mobile{
+            margin: 0 0 26px;
+        }
     }
 
     .partners__item img {
-        width: 353px;
+
+        @include mobile {
+            width: 353px;
+        }
     }
 
 
