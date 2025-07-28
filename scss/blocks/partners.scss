@@ -9,6 +9,10 @@
         padding: 50px 0 0;
     }
 
+    @include mobile {
+        padding: 20px 0 0;
+    }
+
 
 
 
@@ -21,6 +25,10 @@
 
         @include tablet {
             margin: 0 0 56px;
+        }
+
+        @include mobile {
+            margin: 0 0 30px;
         }
     }
 
@@ -40,6 +48,12 @@
         @include tablet {
             margin: 0  auto 76px;
         }
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
     }
 
 
@@ -47,6 +61,10 @@
 
     .partners__item:nth-of-type(n+2) {
         margin-left: 78px;
+
+        @include mobile {
+            margin: 0;
+        }
     }
 
 
@@ -65,6 +83,18 @@
         @include desktop-wide {
             margin-bottom: 80px;
         }
+
+        @include mobile {
+            margin: 0;
+        }
+    }
+
+    .partners__item:not(:last-of-type) {
+        margin: 0 0 26px;
+    }
+
+    .partners__item img {
+        width: 353px;
     }
 
 
@@ -78,6 +108,10 @@
         @include tablet {
             width: 326px;
             min-height: 45px;
+        }
+
+        @include mobile {
+            margin-top: 85px;
         }
     }
 }
