@@ -10,8 +10,10 @@
         min-width: 690px;
     }
 
-
-
+    @include mobile {
+        padding: 80px 0 0;
+        min-width: 510px;
+    }
 
     .about__title {
         margin: 0 0 100px;
@@ -21,15 +23,13 @@
         }
     }
 
-
-
-
     .about__wrp {
         @include flex-space-between();
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
-
-
-
 
     .about__item-content {
         width: 449px;
@@ -45,9 +45,6 @@
             margin: 0 30px;
         }
     }
-
-
-
 
     .about__subtitle {
         @include font-mixin(21px, 28px);
@@ -65,6 +62,7 @@
             @include tablet {
                 margin: 0 0 40px;
             }
+
         }
 
         @include desktop-wide {
@@ -74,10 +72,11 @@
         @include tablet {
             margin: 0 0 40px;
         }
+
+        @include mobile {
+            text-align: center;
+        }
     }
-
-
-
 
     .about__desc {
         @include font-mixin($line-height-param: 24px, $font-weight-param: 400);
@@ -90,13 +89,14 @@
         }
 
         @include tablet {
-            @include font-mixin(14px, 21px,  );
+            @include font-mixin(14px, 21px, 400);
             width: 445px;
         }
+
+        @include mobile {
+            text-align: center;
+        }
     }
-
-
-
 
     .about__item-digits {
         width: 258px;
@@ -104,17 +104,15 @@
         @include desktop-wide{
             width: 208px;
         }
+
+        @include mobile {
+            width: 510px;
+        }
     }
-
-
-
 
     .digits__desk-orange {
         color: $gold;
     }
-
-
-
 
     .about__digits {
         display: flex;
@@ -128,17 +126,26 @@
         @include tablet {
             gap: 25px;
         }
+
+        @include mobile {
+            flex-direction: row;
+            justify-content: center;
+            gap: 82px;
+        }
     }
 
-
-
+    .digits__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
 
     .digits__item img {
         margin: 0 0 10px;
     }
-
-
-
+    
 
     .about__img {
         width: 369px;
