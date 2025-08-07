@@ -10,8 +10,10 @@
     }
 
     @include mobile {
-        padding: 26px 0 0;
+        padding: 60px 0 0;
+        width: 100%;
     }
+
 
     .productions__title{ 
         margin: 0 0 113px;
@@ -25,32 +27,35 @@
         }
 
         @include mobile {
-            margin: 0 0 20px;
+            margin: 0 0 30px;
         }
     }
+
 
     .productions__list {
         @include flex-center();
     }
     
+
     .productions__item-title {
         @include font-mixin(24px, 32px);
         font-family: $font-family-condensed;
         text-transform: uppercase;
         margin: 35px 0 0 34px;
-        width: 100px;
+        width: 33%;
 
         @include mobile {
             white-space: nowrap;
         }
     }
 
+
     .productions__item {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 370px;
-        height: 478px;
+        width: 50%;
+        min-height: 502px;
         box-sizing: border-box;
 
         &--building {
@@ -59,6 +64,10 @@
 
         &--square {
             background-image: url(/img/productions2.jpg);
+
+            @media (max-width: 669px) {
+                display: none;
+            }
 
             @include mobile {
                 display: none;
@@ -76,6 +85,10 @@
         @include desktop-wide {
             width: 50%;
             min-height: 476px;
+        }
+
+        @include tablet {
+            width: 90%;
         }
 
         @include mobile {

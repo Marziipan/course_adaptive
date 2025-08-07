@@ -1,6 +1,6 @@
 .rating {
     padding: 209px 25px 0;
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
 
     @include desktop-wide {
@@ -14,9 +14,7 @@
 
     @include mobile {
         padding: 36px 0 0;
-        width: 100%;
     }
-
 
 
     .rating__wrp {
@@ -24,26 +22,27 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding: 126px 165px 142px;
+        padding: 126px 165px;
 
         @include flex-space-between();
 
         @include desktop-wide {
-            padding: 134px 134px 118px 168px;
+            padding: 126 0;
             gap: 51px;
         }
 
         @include tablet {
-            padding: 126px 99px 126px 99px;
+            justify-content: space-around;
+            padding: 126px 0;
             gap: 25px;
         }
 
         @include mobile {
-            padding: 48px 59px 59px 76px;
+            justify-content: center;
+            gap: 0;
+            padding: 0;
         }
     }
-
-
 
 
     .rating__year-item {
@@ -59,10 +58,8 @@
     }
 
 
-
-
     .rating__info {
-        width: 540px;
+        width: 48,6%;
         margin: 35px 0 0;
 
         @include desktop-wide {
@@ -72,9 +69,11 @@
         @include tablet {
             width: 388px; 
         }
+
+        @include mobile {
+            margin: 48px 59px 70px 76px;
+        }
     }
-
-
 
 
     .rating__stars {
@@ -91,7 +90,7 @@
 
         @include tablet {
             margin: 0 0 49px;
-            width: 30px;
+            max-width: 30px;
             height: 38px;
             gap: 29px;
         }
@@ -100,8 +99,6 @@
             display: none;
         }
     }
-
-
 
 
     .rating__title {

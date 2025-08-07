@@ -4,6 +4,7 @@
   align-items: center;
 }
 
+
 @mixin flex-space-between {
   display: flex;
   justify-content: space-between;
@@ -16,17 +17,20 @@
   font-weight: $font-weight-param;
 }
 
+
 @mixin desktop-wide {
   @media (max-width: $desktop-wide) {
     @content;
   }
 }
 
+
 @mixin tablet {
   @media (max-width: $tablet) {
     @content;
   }
 }
+
 
 @mixin mobile {
   @media (max-width: $mobile) {
