@@ -60,10 +60,18 @@
 
         &--building {
             background-image: url('/img/productions1.jpg');
+
+            @include retina {
+                background-image: url('/img/productions1-2x.jpg');
+            }
         }
 
         &--square {
-            background-image: url(/img/productions2.jpg);
+            background-image: url('/img/productions2.jpg');
+
+            @include retina {
+                background-image: url('/img/productions2-2x.jpg');
+            }
 
             @media (max-width: 669px) {
                 display: none;
@@ -76,6 +84,10 @@
 
         &--hall {
             background-image: url(/img/productions3.jpg);
+
+            @include retina {
+                background-image: url(/img/productions-3-2x.jpg);
+            }
 
             @include desktop-wide {
                 display: none;

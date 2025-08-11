@@ -26,6 +26,10 @@
 
         @include flex-space-between();
 
+        @include retina {
+            background-image: url(/img/critics-awards-bkg-2x.jpg);
+        }
+
         @include desktop-wide {
             padding: 126 0;
             gap: 51px;

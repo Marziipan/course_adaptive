@@ -5,6 +5,10 @@
     padding: 50px 0 179px;
     position: relative;
 
+    @include retina {
+        background-image: url('/img/header-bkg-2x.jpg');
+    }
+
     @include desktop-wide {
         padding: 48px 0 363px;
     }
